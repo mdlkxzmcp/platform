@@ -1,5 +1,7 @@
 # Platform
 
+[![Build Status](https://travis-ci.org/Mdlkxzmcp/platform.svg?branch=master)](https://travis-ci.org/Mdlkxzmcp/platform)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
