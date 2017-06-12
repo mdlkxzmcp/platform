@@ -1,5 +1,12 @@
 language: elixir
 elixir:
-  - 1.4.2
+- 1.4.2
 otp_release:
-  - 19.0
+- 19.0
+deploy:
+  provider: heroku
+  api_key:
+    secure: LGuUubKUSA6e+krkfttUNaXYgjOvkHUzXDgY+9K+McOCqeCZWsb/b2enLTFyf9OVhetPlZVVnuDNaS9Pr0SqDLfEB6bTlvPJ/5grkG53hChhQvMFESwg3mNEfGpaFOjS/a7ekzxoksuIUcqc/p7Nbf6guDsrI9jlsJibgLPFo8uN/efYsiz/ANXtzxtAVc14MUCJNFkKz0mwnb7x5AcMP7eIoLnHymeuMMswXt5xa28keiEACwEjylS6XNTM26OtGUwh2hHMfWFwi249wFFkv2PHB2HnluJnZBnPnOndRkL6BPwsx9y5zEYKOAkR1MpgAaC+fQdmWexkD9rZ7JGnSLezQd855vfVu+OKxXY1MEaIqXiCdWs2o6n2iNt6Uaq3+Q4hfRDBpd2+Z65CkZRdWf10N1e1JmB1yLF1Sy91zUET1Wfa24fqXS7fO4nSVy6jum3wwi3AF1PuzqZOXmENr0Dktd0wZEsUBUG2cv2z5URFKlPRJPqkyRoT4k9Lqy/qiW18pywMyqa/vMFm3sUSklVt4pYNQwiGzRL1p/5pMuAP8qRx2SjVmAG5l532/VU/O6ONbYJ/Tu93Yo/uzzw3E8wT0tmg06Q+MWCuaNEFeRsnJ9SVbi2ZC0yba0Glnwb5h6CBAFlyVZpq70DT4n/slCUhL8hvzN1QIz7EhLrbVx4=
+  app: mdlkxzmcp-test-platform
+  on:
+    repo: Mdlkxzmcp/platform

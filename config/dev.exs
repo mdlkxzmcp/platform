@@ -49,4 +49,10 @@ config :logger, :console, format: "[$level] $message\n"
 config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
-# import_config "dev.secret.exs"
+config :platform, Platform.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "mdlkxzmcp",
+  password: "P05tGre$Pass_",
+  database: "platform_dev",
+  hostname: "localhost",
+  pool_size: 10
