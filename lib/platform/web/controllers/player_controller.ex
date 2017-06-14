@@ -17,6 +17,7 @@ defmodule Platform.Web.PlayerController do
     case Accounts.create_player(player_params) do
       {:ok, player} ->
         conn
+        |> Platform.Web.PlayerAuthController.login(player)
         |> put_flash(:info, "Player created successfully.")
         |> redirect(to: player_path(conn, :show, player))
       {:error, %Ecto.Changeset{} = changeset} ->
@@ -56,4 +57,5 @@ defmodule Platform.Web.PlayerController do
     |> put_flash(:info, "Player deleted successfully.")
     |> redirect(to: player_path(conn, :index))
   end
+
 end
