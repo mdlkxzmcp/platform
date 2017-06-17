@@ -14,7 +14,11 @@ exports.config = {
 
   plugins: {
     babel: { ignore: [/vendor/] },
-    elmBrunch: { elmFolder: "../lib/platform/web/elm", mainModules: ["Main.elm"], outputFolder: "../../../../assets/vendor" }
+    elmBrunch: {
+      elmFolder: "../lib/platform/web/elm",
+      mainModules: ["Main.elm", "Game.elm"],
+      outputFolder: "../../../../assets/vendor"
+    }
   },
 
   modules: { autoRequire: { "js/app.js": ["js/app"] } },
